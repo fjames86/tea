@@ -29,6 +29,9 @@ CL-USER> *v*
 #(1 1 1 1 1 1 1 1)
 ```
 
+## License
+Licensed under the terms of the MIT license.
+
 Frank James 
 November 2015.
 

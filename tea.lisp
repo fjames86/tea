@@ -218,18 +218,18 @@ Returns SEQUENCE."
       
 
     
-(defun test1 ()
-  (let ((key '(1 2 3 4))
-        (v (make-array 24 :initial-element 12 :element-type '(unsigned-byte 8))))
-    (unless (every #'=
-                   #(201 28 13 105 246 74 92 235 34 84 29 249 222 155 170 193 162 235 214 104 133 87 102 168)
-                   (encrypt key v))
-      (error "Failed to encrypt"))
-    (unless (every #'=
-                   #(12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12)
-                   (decrypt key v))
-      (error "Failed to decrypt"))
-    t))
+;; (defun test1 ()
+;;   (let ((key '(1 2 3 4))
+;;         (v (make-array 24 :initial-element 12 :element-type '(unsigned-byte 8))))
+;;     (unless (every #'=
+;;                    #(201 28 13 105 246 74 92 235 34 84 29 249 222 155 170 193 162 235 214 104 133 87 102 168)
+;;                    (encrypt key v))
+;;       (error "Failed to encrypt"))
+;;     (unless (every #'=
+;;                    #(12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12)
+;;                    (decrypt key v))
+;;       (error "Failed to decrypt"))
+;;     t))
 
   
         
